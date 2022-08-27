@@ -43,13 +43,13 @@
         php yii migrate <br>
         [yes] <br>
         php yii migrate <br>
-        http://localhost:8022/signup (Frontend) Urlga kiramiz va ro'yxatdan o'tamiz<br>
+        <a href="http://localhost:8022">localhost:8022 (Frontend) Urlga kiramiz va ro'yxatdan o'tamiz</a> <br>
         <img src="readme/1.png" height="400px">
     </p> <br>
     <p>
-        http://localhost:8021 (Backend) <br> 
-        http://localhost:8022 (Frontend) <br> 
-        http://localhost:8023 (Api) <br> 
+        <a href="http://localhost:8021">localhost:8021 (Backend)</a> <br> 
+        <a href="http://localhost:8022">localhost:8022 (Frontend)</a> <br> 
+        <a href="http://localhost:8023">localhost:8023 (Api)</a> <br> 
     </p>
     <p>
         php yii role/assign <br>
@@ -59,7 +59,7 @@
         exit <br>
         <img src="readme/2.png" height="400px">
         sudo chmod -R 777 api/runtime <br>
-        http://localhost:8021 (Endi adminkaga kirsak bo'ladi) <br>
+        <a href="http://localhost:8021">localhost:8021 (Endi adminkaga kirsak bo'ladi)</a> <br>
     </p>
 </p>
 
