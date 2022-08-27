@@ -1,0 +1,64 @@
+version: '3.5'
+
+services:
+  # -------------------------- BEGIN WEB --------------------------
+  backend-nginx:
+    build:
+      context: ./backend/docker
+      dockerfile: nginx.docker
+    volumes:
+      - ./:/var/www/app
+    ports:
+      - "${BACKEND_NGINX_PORT}:80"
+  frontend-nginx:
+    build:
+      context: ./frontend/docker
+      dockerfile: nginx.docker
+    volumes:
+      - ./:/var/www/app
+    ports:
+      - "${FRONTEND_NGINX_PORT}:80"
+  api-nginx:
+    build:
+      context: ./api/docker
+      dockerfile: nginx.docker
+    volumes:
+      - ./:/var/www/app
+    ports:
+      - "${API_NGINX_PORT}:80"
+  php-fpm:
+    build:
+      context: ./docker
+      dockerfile: php-fpm.docker
+    volumes:
+      - ./:/var/www/app
+      - ./docker/php-fpm/php.ini-${APP_ENV}:${PHP_INI_DIR:-default}/php.ini
+  php-cli:
+    build:
+      context: ./docker
+      dockerfile: php-cli.docker
+    volumes:
+      - ./:/var/www/app
+      - ./docker/php-cli/php.ini-${APP_ENV}:${PHP_INI_DIR:-default}/php.ini
+    working_dir: /var/www/app
+    tty: true
+  redis:
+    build:
+      context: ./docker
+      dockerfile: redis.docker
+    ports:
+      - "${REDIS_PORT}:6379"
+  pgsql:
+    image: postgres:14.3-alpine
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    environment:
+      - POSTGRES_DB=candidate
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+
+  # --------------------------- END WEB --------------------------
+
+networks:
+  default:
+    name: ${DOCKER_DEFAULT_NETWORK_NAME}

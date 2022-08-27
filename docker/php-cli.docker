@@ -1,0 +1,18 @@
+FROM php:7.4-cli
+
+RUN apt-get update && apt-get install -y libmcrypt-dev libzip-dev zip libxml2-dev libpq-dev libpng-dev libjpeg-dev libfreetype6-dev libxslt-dev libgcrypt-dev wget unzip \
+    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
+    && docker-php-ext-install pdo_pgsql pgsql zip \
+    && pecl install mcrypt-1.0.3 \
+    && docker-php-ext-enable mcrypt \
+    && docker-php-ext-install sockets \
+    && docker-php-ext-install soap \
+    && docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ --with-freetype=/usr/include/ \
+    && docker-php-ext-install gd \
+    && docker-php-ext-install dom \
+    && docker-php-ext-install pcntl \
+    && docker-php-ext-install xsl
+
+RUN wget https://getcomposer.org/installer -O - -q | php -- --install-dir=/bin --filename=composer --quiet
+
+WORKDIR /var/www

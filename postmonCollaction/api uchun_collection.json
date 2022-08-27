@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "d48902ef-b5b6-4877-86eb-d7b9ca0d933b",
+		"name": "vazifa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12230928"
+	},
+	"item": [
+		{
+			"name": "candidate",
+			"item": [
+				{
+					"name": "send Yuborish",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"last_name\": \"Usmonkulov\",\n    \"first_name\": \"Bobur\",\n    \"middle_name\": \"Raxmatulla o'g'li\",\n    \"birthday\": \"1994-05-29\",\n    \"gender\": \"m\",\n    \"phone\": \"906550543\",\n    \"email\": \"usmonkulov5@gmail.com\",\n    \"country_origin\": \"Uzbekiston\",\n    \"address\": \"Samarqand viloyati Bulung'ur tumani Lalmikor MFY\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/candidate/send",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"candidate",
+								"send"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "label",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/candidate/label",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"candidate",
+								"label"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/candidate/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"candidate",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "count",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"usmonkulov\",\n    \"password\": \"1234567890\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}/auth/login",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
