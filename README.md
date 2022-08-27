@@ -108,29 +108,19 @@ api
     tests/               contains tests for backend application    
     web/                 contains the entry script and Web resources
 candidate
-    entities/            Baza bilan bog'lanish uchun model
-    forms/               formalar uchun
-    readModels/          asosan gridviewlar uchun
-    repositories/        faqat bazaga beriladigan so'rovlar shu yerda
-    services/            qanaqadir servislar shu yerda 
-    status/              holati uchun statik status bo'ladi 
+    access
+    behaviors
+    dispatchers
+    entities
+    forms
+    helpers
+    jobs
+    readModels
+    repositories
+    services
+    status
+    useCases
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
-
-Postgres Uchun sozlama
-'db' => [
-    `'class' => 'yii\db\Connection',
-    'dsn' => 'pgsql:host=localhost;port=port_number;dbname=database_name',
-    'username' => 'postgres',
-    'password' => '123456',
-    'charset' => 'utf8',
-    'schemaMap' => [
-        'pgsql'=> [
-            'class'=>'yii\db\pgsql\Schema',
-            //specify your schema here
-            'defaultSchema' => 'public'
-        ]
-    ],
-],`
 ```
 
