@@ -63,6 +63,7 @@
     </p>
     <p>
         <a href="http://localhost:8023">localhost:8023 (Api ni ishlatamiz birinchi quyidagi postmon collactionni import qilib oling)</a> <br>
+        <img src="readme/3.png" height="400px">
     </p>
 </p>
 
