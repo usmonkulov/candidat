@@ -30,7 +30,7 @@
         Loyihani ko'tarish (Yoqish) <br>
         sudo docker-compose up -d <br>
         Loyihani yiqitish (O'chirish) <br>
-        sudo docker-compose up -d <br>
+        sudo docker-compose down <br>
     </p>    
     <p>
         Containerning ichiga kiramiz <br>
