@@ -2,7 +2,7 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 Framework yordamida proyekt</h1>
+    <h1 align="center">Yii 2 Framework yordamida loyiha yaratildi</h1>
     <br>
     <b> Ubuntu 20.04.4 LTS </b>
     <br>
