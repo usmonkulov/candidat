@@ -61,6 +61,9 @@
         sudo chmod -R 777 api/runtime <br>
         <a href="http://localhost:8021">localhost:8021 (Endi adminkaga kirsak bo'ladi)</a> <br>
     </p>
+    <p>
+        <a href="http://localhost:8023">localhost:8023 (Api ni ishlatamiz birinchi quyidagi postmon collactionni import qilib oling)</a> <br>
+    </p>
 </p>
 
 Fayillar strukturasi
