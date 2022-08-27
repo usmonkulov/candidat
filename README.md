@@ -67,6 +67,7 @@
         <img src="readme/3.png" height="400px"> <br>
         Collections va Environments larni import qilib oling va o'zingiz ishlatib ko'ring <br>
         Savollar bo'lsa <a href="https://t.me/bobur_usmonkulov">@bobur_usmonkulov</a> menga bo'g'aning iloji boricha javob beraman <br>
+        Kimgadir Projectingiz uchun foydasi tegsa xursandman Realni loyiha uchun qo'l keladi<br>
         Raxmat!
     </p>
 </p>
