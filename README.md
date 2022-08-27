@@ -44,7 +44,7 @@
         [yes] <br>
         php yii migrate <br>
         http://localhost:8022/signup (Frontend) Urlga kiramiz va ro'yxatdan o'tamiz<br>
-        <img src="readme/1.png" height="500px">
+        <img src="readme/1.png" height="400px">
     </p> <br>
     <p>
         http://localhost:8021 (Backend) <br> 
@@ -57,7 +57,7 @@
         Role: [user,admin,?]: admin (Admin yoki User ni tanlaymiz) <br>
         Done! <br>
         exit <br>
-        <img src="readme/1.png" height="500px">
+        <img src="readme/2.png" height="400px">
         sudo chmod -R 777 api/runtime <br>
         http://localhost:8021 (Endi adminkaga kirsak bo'ladi) <br>
     </p>
