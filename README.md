@@ -63,7 +63,7 @@
     </p>
 </p>
 
-DIRECTORY STRUCTURE
+Fayillar strukturasi
 -------------------
 
 ```
