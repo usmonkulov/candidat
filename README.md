@@ -63,7 +63,10 @@
     </p>
     <p>
         <a href="http://localhost:8023">localhost:8023 (Api ni ishlatamiz birinchi quyidagi postmon collactionni import qilib oling)</a> <br>
-        <img src="readme/3.png" height="400px">
+        <img src="readme/3.png" height="400px"> <br>
+        Collections va Environments larni import qilib oling va o'zingiz ishlatib ko'ring <br>
+        Savollar bo'lsa <a href="https://t.me/bobur_usmonkulov">@bobur_usmonkulov</a> menga bo'g'aning <br>
+        Raxmat!
     </p>
 </p>
 
