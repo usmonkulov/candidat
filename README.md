@@ -30,12 +30,12 @@
         Loyihani ko'tarish (Yoqish) <br>
         sudo docker-compose up -d <br>
         Loyihani yiqitish (O'chirish) <br>
-        sudo docker-compose up -d <br>
+        sudo docker-compose down <br>
     </p>    
     <p>
         Containerning ichiga kiramiz <br>
-        sudo docker-compose ps (candidate_php-cli_1) <br>
-        sudo docker exec -it candidate_php-cli_1 bash (container ichiga kirdik)<br>
+        sudo docker-compose ps (candidat_php-cli_1) <br>
+        sudo docker exec -it candidat_php-cli_1 bash (container ichiga kirdik)<br>
         composer install <br>
         php init <br>
         [0] Development (Tanlaymiz) <br>
