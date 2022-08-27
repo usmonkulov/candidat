@@ -20,7 +20,7 @@
         git version 2.25.1
     </p>
     <p>
-        git clone https://github.com/usmonkulov/candidate.git candidate <br>
+        git clone https://github.com/usmonkulov/candidat.git candidat <br>
         sudo cp .env.example .env <br>
     </p>    
     <br>
