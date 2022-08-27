@@ -57,7 +57,7 @@
         Role: [user,admin,?]: admin (Admin yoki User ni tanlaymiz) <br>
         Done! <br>
         exit <br>
-        <img src="readme/2.png" height="400px">
+        <img src="readme/2.png" height="100px">
         sudo chmod -R 777 api/runtime <br>
         <a href="http://localhost:8021">localhost:8021 (Endi adminkaga kirsak bo'ladi)</a> <br>
     </p>
