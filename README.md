@@ -9,8 +9,10 @@
     <br>
     <h3>Birinchi o'rinda <b>docker<b> va </b>docker-compose</b> ni o'rnatamiz</h3>
     <p>
-        docker --version <br>
-        Docker version 20.10.16
+        <b>
+            docker --version <br>
+            Docker version 20.10.16
+        </b>
     </p>
     <p>
         <p> 1. sudo apt-get update </p>
@@ -32,8 +34,10 @@
             sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin </p>
     </p>
     <p>
-        docker-compose --version <br>
-        docker-compose version 1.29.2
+        <b>
+            docker-compose --version <br>
+            docker-compose version 1.29.2
+        </b>
     </p>
     <p>
        <p> 1. sudo curl -SL https://github.com/docker/compose/releases/download/1.29.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose </p>
