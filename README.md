@@ -13,6 +13,32 @@
         Docker version 20.10.16
     </p>
     <p>
+        sudo apt-get update <br>
+    
+        sudo apt-get install \
+            ca-certificates \
+            curl \
+            gnupg \
+            lsb-release <br>
+        sudo mkdir -m 0755 -p /etc/apt/keyrings <br>
+    
+        curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg <br>
+    
+        echo \
+          "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null <br>
+    
+        sudo apt-get update <br>
+    
+        sudo chmod a+r /etc/apt/keyrings/docker.gpg <br>
+    
+        sudo apt-get update <br>
+    
+        apt-cache madison docker-ce | awk '{ print $3 }' <br>
+        
+        VERSION_STRING=5:20.10.16~3-0~ubuntu-focal <br>
+        sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
+    <p>
         docker-compose --version <br>
         docker-compose version 1.29.2
     </p>
