@@ -13,29 +13,31 @@
         Docker version 20.10.16
     </p>
     <p>
-        1. sudo apt-get update <br>
-        2. sudo apt-get install \
+        <p> 1. sudo apt-get update </p>
+        <p> 2. sudo apt-get install \
             ca-certificates \
             curl \
             gnupg \
-            lsb-release <br>
-        3. sudo mkdir -m 0755 -p /etc/apt/keyrings <br>
-        4. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg <br>
-        5. echo \
+            lsb-release </p>
+        <p> 3. sudo mkdir -m 0755 -p /etc/apt/keyrings </p>
+        <p> 4. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg </p>
+        <p> 5. echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null <br>
-        6. sudo apt-get update <br>
-        7. sudo chmod a+r /etc/apt/keyrings/docker.gpg <br>
-        8. sudo apt-get update <br>
-        9. apt-cache madison docker-ce | awk '{ print $3 }' <br>
-        10. VERSION_STRING=5:20.10.16~3-0~ubuntu-focal
-            sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin <br>
+          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null </p>
+        <p> 6. sudo apt-get update <p>
+        <p> 7. sudo chmod a+r /etc/apt/keyrings/docker.gpg </p>
+        <p> 8. sudo apt-get update <p>
+        <p> 9. apt-cache madison docker-ce | awk '{ print $3 }' </p>
+        <p> 10. VERSION_STRING=5:20.10.16~3-0~ubuntu-focal
+            sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin </p>
     </p>
     <p>
         docker-compose --version <br>
-        docker-compose version 1.29.2 <br>
-        1. sudo curl -SL https://github.com/docker/compose/releases/download/1.29.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose <br>
-        sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+        docker-compose version 1.29.2
+    </p>
+    <p>
+       <p> 1. sudo curl -SL https://github.com/docker/compose/releases/download/1.29.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose </p>
+       <p>sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose </p>
     </p>
     <p>
         git --version <br>
