@@ -12,6 +12,7 @@
         docker --version <br>
         Docker version 20.10.16
     </p>
+<p>
     <p>
         1. sudo apt-get update
     
