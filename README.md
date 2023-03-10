@@ -38,6 +38,7 @@
         
         10. VERSION_STRING=5:20.10.16~3-0~ubuntu-focal
             sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
+    </p>
     <p>
         docker-compose --version <br>
         docker-compose version 1.29.2
