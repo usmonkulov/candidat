@@ -37,7 +37,7 @@
     </p>
     <p>
        <p> 1. sudo curl -SL https://github.com/docker/compose/releases/download/1.29.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose </p>
-       <p>sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose </p>
+       <p> 2. sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose </p>
     </p>
     <p>
         git --version <br>
