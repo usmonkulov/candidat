@@ -13,30 +13,23 @@
         Docker version 20.10.16
     </p>
     <p>
-        1. sudo apt-get update
+        1. sudo apt-get update <br>
         2. sudo apt-get install \
             ca-certificates \
             curl \
             gnupg \
-            lsb-release
-        3. sudo mkdir -m 0755 -p /etc/apt/keyrings
-    
-        4. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-    
+            lsb-release <br>
+        3. sudo mkdir -m 0755 -p /etc/apt/keyrings <br>
+        4. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg <br>
         5. echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    
-        6. sudo apt-get update
-    
-        7. sudo chmod a+r /etc/apt/keyrings/docker.gpg
-    
-        8. sudo apt-get update
-    
-        9. apt-cache madison docker-ce | awk '{ print $3 }'
-        
+          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null <br>
+        6. sudo apt-get update <br>
+        7. sudo chmod a+r /etc/apt/keyrings/docker.gpg <br>
+        8. sudo apt-get update <br>
+        9. apt-cache madison docker-ce | awk '{ print $3 }' <br>
         10. VERSION_STRING=5:20.10.16~3-0~ubuntu-focal
-            sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
+            sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin <br>
     </p>
     <p>
         docker-compose --version <br>
