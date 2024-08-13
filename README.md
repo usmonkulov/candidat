@@ -43,6 +43,7 @@
        <p> 1. sudo curl -SL https://github.com/docker/compose/releases/download/1.29.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose </p>
        <p> 2. sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose </p>
     </p>
+    https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
     <p>
         git --version <br>
         git version 2.25.1
